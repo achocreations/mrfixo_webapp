@@ -1,0 +1,69 @@
+{
+  "name": "mrfixo-frontend",
+  "version": "1.0.0",
+  "description": "MrFixo Mobile Application Frontend",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-native": "0.72.0",
+    "react-navigation": "^4.4.4",
+    "react-navigation-stack": "^2.10.4",
+    "react-navigation-tabs": "^2.11.0",
+    "axios": "^1.5.0",
+    "formik": "^2.2.9",
+    "yup": "^1.2.0",
+    "react-native-async-storage/async-storage": "^1.17.10",
+    "react-native-vector-icons": "^9.2.0",
+    "react-native-maps": "^1.3.2",
+    "react-native-gesture-handler": "^2.9.0",
+    "react-native-reanimated": "^3.3.0",
+    "react-native-safe-area-context": "^4.7.1",
+    "react-native-screens": "^3.19.0",
+    "react-native-paper": "^5.6.1"
+  },
+  "overrides": {
+      "react-navigation-tabs": {
+        "react-native-gesture-handler": "^2.9.0"
+      }
+  },  
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@babel/runtime": "^7.20.0",
+    "@react-native-community/eslint-config": "^3.2.0",
+    "babel-jest": "^29.2.0",
+    "eslint": "^8.26.0",
+    "jest": "^29.2.0",
+    "metro-react-native-babel-preset": "^0.73.0",
+    "react-test-renderer": "18.2.0",
+    "@testing-library/react-native": "^11.0.0",
+    "@testing-library/jest-native": "^4.0.4"
+  },
+  "jest": {
+    "preset": "react-native",
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "@react-native-community"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
